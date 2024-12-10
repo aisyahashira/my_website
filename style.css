@@ -1,0 +1,41 @@
+body
+    {background-color: pink;}
+
+a:link
+    {
+        color: beige;
+        background-color: aliceblue; 
+        text-decoration: none;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 15px;
+    }
+
+a:visited
+    {
+    color: darkblue;
+    background-color: aquamarine;
+    text-decoration: none;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 15px;
+    }
+
+a:hover
+    {
+    color: darkorchid;
+    background-color: tan;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 15px;
+
+    }
+
+a:active
+    {
+        color: indianred;
+        background-color: thistle;
+        text-decoration: none;
+        padding: 15px;
+    }
+    
