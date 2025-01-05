@@ -1,0 +1,243 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #ffe4e1; 
+      color: #4a4a4a; 
+      line-height: 1.6;
+      }
+
+    a {
+      text-decoration: none;
+      color: #ff69b4; 
+      }
+
+    header {
+      background-color: #ff69b4; 
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      }
+
+    header h1 {
+      font-size: 2.5rem;
+      }
+
+    header p {
+      font-size: 1.2rem;
+      }
+
+    nav {
+      background-color: #fff;
+      padding: 1rem 0;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      }
+
+    nav ul li {
+      margin: 0 15px;
+      }
+
+    nav ul li a {
+      font-size: 1rem;
+      font-weight: bold;
+      }
+
+    .gallery {
+      padding: 50px 20px;
+      text-align: center;
+      }
+
+    .gallery h2 {
+      font-size: 2rem;
+      color: #ff69b4;
+      margin-bottom: 20px;
+      }
+
+    .gallery-section {
+      margin-bottom: 40px;
+      }
+
+    .gallery-section h3 {
+      color: #ff69b4;
+      text-align: center;
+      margin-bottom: 20px;
+      }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* Change to 4 columns */
+      gap: 15px; /* Smaller gap between items */
+      padding: 20px;
+      }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      height: 250px; /* Reduced height for a more compact layout */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Change from 'contain' to 'cover' for better fit */
+      }
+
+    .gallery-item:hover img {
+      transform: scale(1.05); /* Slight zoom effect on hover */
+      transition: transform 0.3s ease-in-out;
+      }
+
+    @keyframes vibration {
+      0% { transform: translateX(0); }
+      10% { transform: translateX(-5px); }
+      20% { transform: translateX(5px); }
+      30% { transform: translateX(-5px); }
+      40% { transform: translateX(5px); }
+      50% { transform: translateX(0); }
+      }
+
+    .vibrate {
+      animation: vibration 0.3s ease-out;
+      }
+
+    footer {
+      text-align: center;
+      background-color: #ff69b4;
+      color: white;
+      padding: 1rem 0;
+      margin-top: 20px;
+      }
+
+    footer p {
+      font-size: 0.9rem;
+      }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>My Gallery</h1>
+    <p>A collection of my favorite moments</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="welcomepage.html">Home</a></li>
+      <li><a href="index.html">About Me</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="media.html">Media</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="workexperience.html">Work Experience</a></li>
+      <li><a href="favorite_movies.html">Favorite Movies</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Gallery Section -->
+  <section class="gallery">
+    <h2>Photo Gallery</h2>
+    <h4><font color="#ff69b4">be cautious when clicking on the picture</font></h4>
+
+    <!-- Family Section -->
+    <div class="gallery-section">
+      <h3>Family Moments</h3>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="images/IMG_2624.HEIC" alt="Family Image 1"></div>
+        <div class="gallery-item"><img src="images/GAM07769.JPG" alt="Family Image 2"></div>
+        <div class="gallery-item"><img src="images/e8a0c39e-d531-4680-8de8-8c59e6c0368b.JPG" alt="Family Image 3"></div>
+        <div class="gallery-item"><img src="images/IMG_5734.HEIC" alt="Family Image 4"></div>
+      </div>
+    </div>
+
+    <!-- Friends Section -->
+    <div class="gallery-section">
+      <h3>Friend Moments</h3>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="images/IMG_1053.JPG" alt="Friends Image 1"></div>
+        <div class="gallery-item"><img src="images/IMG_1201.JPG" alt="Friends Image 2"></div>
+        <div class="gallery-item"><img src="images/IMG_8202.HEIC" alt="Friends Image 3"></div>
+        <div class="gallery-item"><img src="images/IMG_4311 2.HEIC" alt="Friends Image 4"></div>
+        <div class="gallery-item"><img src="images/IMG_5396.HEIC" alt="Friends Image 5"></div>
+        <div class="gallery-item"><img src="images/IMG_5591.HEIC" alt="Friends Image 6"></div>
+        <div class="gallery-item"><img src="images/IMG_9238.HEIC" alt="Friends Image 7"></div>
+        <div class="gallery-item"><img src="images/IMG_3143.HEIC" alt="Friends Image 8"></div>
+        <div class="gallery-item"><img src="images/PHOTO-2023-05-02-20-01-37.jpg" alt="Friends Image 9"></div>
+        <div class="gallery-item"><img src="images/IMG_3353.HEIC" alt="Friends Image 10"></div>
+      </div>
+    </div>
+
+    <!-- Cats Section -->
+    <div class="gallery-section">
+      <h3>Cat Moments</h3>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="images/F43CE761-0613-4A37-815A-EA7B50465B55.JPG" alt="Cats Image 1"></div>
+        <div class="gallery-item"><img src="images/63410f0e-e105-4813-af8b-f489a9ccc768.JPG" alt="Cats Image 2"></div>
+        <div class="gallery-item"><img src="images/34C4557F-9FF9-4D09-BA09-5DFE7670697D.JPG" alt="Cats Image 3"></div>
+        <div class="gallery-item"><img src="images/IMG_8422.HEIC" alt="Cats Image 4"></div>
+        <div class="gallery-item"><img src="images/peachgoma1.gif" alt="Cats Image 5"></div>
+        <div class="gallery-item"><img src="images/peachgoma2.gif" alt="Cats Image 6"></div>
+        <div class="gallery-item"><img src="images/peachgoma3.gif" alt="Cats Image 7"></div>
+      </div>
+    </div>
+
+    <!-- Foods Section -->
+    <div class="gallery-section">
+      <h3>Food Moments</h3>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="images/7513A382-D385-47B6-96AB-B0EEF3612AF9.JPG" alt="Foods Image 1"></div>
+        <div class="gallery-item"><img src="images/2BAB5D42-BDC9-44A7-BA69-7F91C99EC28A.JPG" alt="Foods Image 2"></div>
+        <div class="gallery-item"><img src="images/ee2c6354-2d51-4d60-9ea9-ea14ddc2eb5a.JPG" alt="Foods Image 3"></div>
+        <div class="gallery-item"><img src="images/IMG_9141.PNG" alt="Foods Image 4"></div>
+        <div class="gallery-item"><img src="images/IMG_9322.PNG" alt="Foods Image 5"></div>
+        <div class="gallery-item"><img src="images/IMG_9321.PNG" alt="Foods Image 6"></div>
+        <div class="gallery-item"><img src="images/IMG_9303.HEIC" alt="Foods Image 7"></div>
+        <div class="gallery-item"><img src="images/IMG_9319.PNG" alt="Foods Image 8"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Aisyah. All Rights Reserved.</p>
+  </footer>
+
+  <a href="#top">Back to Top</a>
+
+  <script>
+    // Add event listeners for image click to trigger vibration animation
+    const images = document.querySelectorAll('.gallery-item img');
+    images.forEach(img => {
+      img.addEventListener('click', () => {
+        img.classList.add('vibrate');
+        setTimeout(() => {
+          img.classList.remove('vibrate');
+        }, 300); // Duration of the vibration animation
+      });
+    });
+  </script>
+  
+</body>
+</html>
